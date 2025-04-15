@@ -1,0 +1,29 @@
+{
+  "RecipeFormatVersion": "2020-01-25",
+  "ComponentName": "com.example.MLPredictor",
+  "ComponentVersion": "1.0.0",
+  "ComponentDescription": "Edge ML predictor that subscribes to IoT Core and runs local inference.",
+  "ComponentPublisher": "your-name",
+  "ComponentDependencies": {
+    "aws.greengrass.TokenExchangeService": {
+      "VersionRequirement": ">=2.0.0"
+    }
+  },
+  "Manifests": [
+    {
+      "Platform": {},
+      "Lifecycle": {
+        "Run": "python3 ml_predictor.py"
+      },
+      "Artifacts": [
+        {
+          "URI": "s3://your-bucket/com.example.MLPredictor/1.0.0/ml_predictor.py"
+        },
+        {
+          "URI": "s3://your-bucket/com.example.MLPredictor/1.0.0/model.joblib"
+        }
+      ]
+    }
+  ]
+}
+
