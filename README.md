@@ -19,6 +19,7 @@ This repository demonstrates an end-to-end IoT solution with edge machine learni
 - Raspberry Pi with AWS Greengrass Core installed
 - Python 3.9+ installed on the Raspberry Pi
 - AWS CLI installed and configured locally and on the Pi
+- AWS S3 buckets may need some additional setup, see the terraform scripts to set up variables
 
 ---
 
