@@ -1,0 +1,8 @@
+pytest
+moto
+boto3
+pandas
+scikit-learn
+joblib
+moto
+awsiot
